@@ -30,6 +30,7 @@ body{
         justify-content: end;
     word-wrap: break-word;
         word-break: break-all;
+    padding-right: 10px;
   }
 
 .container .output .previous-operand{
