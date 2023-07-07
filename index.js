@@ -44,6 +44,7 @@ class Calculator {
         break;
       case "*":
         computation = prev * current;
+        break;
       case "÷":
         computation = prev / current;
         break;
