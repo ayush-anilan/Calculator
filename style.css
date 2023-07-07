@@ -20,17 +20,54 @@ body{
 	width: 450px;
     height: 550px;
 }
+.container .output{
+    display: flex;
+    width: 320px;
+    height: 120px;
+    background-color: #FF0509;
+    border-radius: 14px;
+    align-items: center;
+        justify-content: end;
+    word-wrap: break-word;
+        word-break: break-all;
+  }
+
+.container .output .previous-operand{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+}  
+.container .output .current-operand{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+}  
+
+.container .clear{
+    position: absolute;
+    border-radius: 50%;
+    border: none;
+    width: 85px;
+    height: 85px;
+    top: 20px;
+    right: 35px;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #FF0509;
+    color: white;
+}
 
 .container .result{
     display: flex;
-    justify-content: center;
     
 }
 
 .container .result #result{
     position: absolute;
-    width: 450px;
-    height: 150px;
+    border-radius: 10px;
+    right: 125px;
+    width: 300px;
+    height: 120px;
     background-color: #FF0509;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
@@ -58,10 +95,11 @@ input[type=text] {
 
 .container .row-1{
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     justify-content: center;
     align-items: center;
-    padding-top: 170px;
-    gap: 10px;
+    padding-top: 40px;
 }
 .container .row-1 button{
     border-radius: 50%;
@@ -77,10 +115,11 @@ input[type=text] {
 
 .container .row-2{
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-    gap: 10px;
 }
 .container .row-2 button{
     border-radius: 50%;
@@ -95,10 +134,11 @@ input[type=text] {
 }
 .container .row-3{
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-    gap: 10px;
 }
 .container .row-3 button{
     border-radius: 50%;
@@ -113,10 +153,11 @@ input[type=text] {
 }
 .container .row-4{
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     justify-content: center;
     align-items: center;
     padding-top: 10px;
-    gap: 10px;
 }
 .container .row-4 button{
     border-radius: 50%;
@@ -129,7 +170,7 @@ input[type=text] {
     font-weight: 600;
     color: #5E5858;
 }
-.container .row-4 .equal{
+.container .row-4 .span-two{
     border-radius: 50%;
     background-color: #ecedef;
     border: none;
